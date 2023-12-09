@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/Cards.css';
 
 export default function cards({ picture, title }) {
   return (
     <div
-      className='w-1/4 h-20 flex justify-center items-center'
+      className='cards'
       style={{
         backgroundImage: `url(${picture})`,
         backgroundSize: 'cover',

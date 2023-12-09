@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div className='h-36 flex justify-around items-center'>
-      <div className='h-17 w-1/3'>
-        <img className='cover' src={imageLogo} alt='logo du site Kasa' />
+    <div className='header-container'>
+      <div className='header-logo'>
+        <img className='logo-img' src={imageLogo} alt='logo du site Kasa' />
       </div>
-      <nav className='h-200px w-1/3 flex justify-around items-center'>
+      <nav className='header-nav'>
         <Link to='/'>Accueil</Link>
         <Link to='/About'>About</Link>
       </nav>

@@ -1,0 +1,13 @@
+.cards {
+  width: 25vw;
+  height: 10vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.cards p {
+  color: white;
+  size: 18px;
+  font-weight: 500;
+}

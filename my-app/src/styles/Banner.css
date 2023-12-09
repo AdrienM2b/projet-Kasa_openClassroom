@@ -1,0 +1,17 @@
+.banner {
+  width: 90%;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/background_home.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text {
+  font-family: 'Montserrat';
+  font-size: 30px;
+  font-weight: 700;
+}

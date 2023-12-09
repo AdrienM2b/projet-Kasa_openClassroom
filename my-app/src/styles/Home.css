@@ -7,17 +7,16 @@
   align-items: center;
 }
 
-.banner {
+.card-gallery {
   width: 90%;
-  height: 200px;
+  height: 30vh;
+  overflow: scroll;
   border-radius: 20px;
+  background-color: #f6f6f6;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  align-items: center;
-  background-image: url(../assets/background_home.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.banner-text {
+  margin-top: 5%;
+  padding: 4% 0 5% 0;
 }
