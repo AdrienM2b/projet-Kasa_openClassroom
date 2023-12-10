@@ -1,0 +1,110 @@
+.houses-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* titre, sous-titre, tags, photo de profil, etoiles,  */
+
+.info-container {
+  height: auto;
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+
+.text-container {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+  color: #ff6060;
+}
+
+.text-container h2 {
+  margin: 3% 0 3% 0;
+}
+
+.text-container h3 {
+  margin: 0 0 6% 0;
+}
+
+.tags-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.tags-container span {
+  width: auto;
+  padding: 2% 3% 2% 3%;
+  border-radius: 20px;
+  color: white;
+  background-color: #ff6060;
+  margin-right: 5%;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rate-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+.stars-container {
+  display: flex;
+}
+
+.profil-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 4%;
+  color: #ff6060;
+}
+
+.profil-container img {
+  margin-left: 10%;
+  border-radius: 50%;
+  width: 37%;
+}
+.profil-container p {
+  height: auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rate .fa-star {
+  font-size: 30px;
+  color: #ff6060;
+}
+
+.fa-star.colored {
+  color: #ff6060;
+}
+
+.fa-star.not-colored {
+  color: #e3e3e3;
+}
+
+/* description */
+
+.description-equipment_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-equipment {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* equipement */

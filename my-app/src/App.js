@@ -17,8 +17,8 @@ function App() {
         <Banner />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/Houses' element={<Houses />} />
+          <Route path='/Apropos' element={<About />} />
+          <Route path='/Houses/:id' element={<Houses />} />
           <Route path='*' element={<Error />} />
         </Routes>
         <Footer />

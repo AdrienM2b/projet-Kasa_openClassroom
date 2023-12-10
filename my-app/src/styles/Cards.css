@@ -1,6 +1,19 @@
+.card-gallery {
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 3%;
+  padding: 3% 0 5% 0;
+}
+
 .cards {
-  width: 25vw;
-  height: 10vh;
+  width: 24vw;
+  height: 30vh;
   display: flex;
   justify-content: start;
   align-items: end;
@@ -10,4 +23,8 @@
   color: white;
   size: 18px;
   font-weight: 500;
+}
+
+a {
+  text-decoration: none;
 }

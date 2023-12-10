@@ -6,17 +6,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.card-gallery {
-  width: 90%;
-  height: 30vh;
-  overflow: scroll;
-  border-radius: 20px;
-  background-color: #f6f6f6;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 5%;
-  padding: 4% 0 5% 0;
-}

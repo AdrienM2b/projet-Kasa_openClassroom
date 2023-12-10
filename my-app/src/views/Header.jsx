@@ -1,6 +1,7 @@
 import React from 'react';
 import imageLogo from '../assets/big_logo.png';
 import { Link } from 'react-router-dom';
+import '../styles/Header.css';
 
 function Header() {
   return (
@@ -10,7 +11,7 @@ function Header() {
       </div>
       <nav className='header-nav'>
         <Link to='/'>Accueil</Link>
-        <Link to='/About'>About</Link>
+        <Link to='/Apropos'>A Propos</Link>
       </nav>
     </div>
   );
