@@ -16,13 +16,11 @@ export default function List({ elements, titre }) {
       <div className='list-header'>
         <h3>{titre}</h3>
         <i
-          className={`fa-solid ${
-            isTextVisible ? 'fa-angle-down' : 'fa-angle-up'
-          }`}
+          className={`fa-solid fa-angle-up ${isTextVisible ? 'go-down' : ''}`}
         ></i>
       </div>
       {isTextVisible && (
-        <div className='text-list'>
+        <div className={`text-list ${isTextVisible ? 'show' : ''}`}>
           {typeof elements === 'string' ? (
             <p>{elements}</p>
           ) : (
