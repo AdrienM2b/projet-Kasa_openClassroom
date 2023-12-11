@@ -1,0 +1,25 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container h2 {
+  font-size: 200px;
+  color: #ff6060;
+  margin: 6%;
+}
+
+.error-container p {
+  width: 100%;
+  color: #ff6060;
+  font-size: 40px;
+  margin: 6%;
+}
+
+.error-container a {
+  color: #ff6060;
+  text-decoration: underline;
+  margin: 7%;
+}

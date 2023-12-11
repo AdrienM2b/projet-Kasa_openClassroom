@@ -1,10 +1,14 @@
 import React from 'react';
 import '../styles/Banner.css';
 
-export default function Banner() {
+export default function Banner({ image, text }) {
+  const bannerStyle = {
+    backgroundImage: `url(${image})`,
+  };
+
   return (
-    <div className='banner'>
-      <p className='banner-text'>Chez vous, partout et ailleurs</p>
+    <div className='banner' style={bannerStyle}>
+      <p className='banner-text'>{text}</p>
     </div>
   );
 }
