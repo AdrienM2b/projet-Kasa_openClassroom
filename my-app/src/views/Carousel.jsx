@@ -16,17 +16,22 @@ const Carousel = ({ images }) => {
 
   return (
     <div className='carousel-container'>
-      <div className='carousel-controls'>
-        <button className='carousel-control-button' onClick={previousSlide}>
-          <i class='fa-solid fa-angle-left prevButton'></i>
-        </button>
-        <button className='carousel-control-button' onClick={nextSlide}>
-          <i class='fa-solid fa-angle-right nextButton'></i>
-        </button>
-      </div>
+      {images.length < 2 ? (
+        ''
+      ) : (
+        <div className='carousel-controls'>
+          <button className='carousel-control-button' onClick={previousSlide}>
+            <i className='fa-solid fa-angle-left prevButton'></i>
+          </button>
+          <button className='carousel-control-button' onClick={nextSlide}>
+            <i className='fa-solid fa-angle-right nextButton'></i>
+          </button>
+        </div>
+      )}
+
       <div className='carousel-slide'>
         <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-        {images.lentgh === 1 ? (
+        {images.length < 2 ? (
           ''
         ) : (
           <p className='nbr-of-images'>
