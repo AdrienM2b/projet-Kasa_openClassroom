@@ -4,20 +4,38 @@
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  background-color: #ff6060;
-  border-radius: 5px;
   padding: 0 2% 0 2%;
+  overflow: hidden;
 }
 
 .list-header {
   width: 100%;
   display: flex;
   align-items: center;
+  background-color: #ff6060;
+  padding: 0 2% 0 2%;
+  border-radius: 5px;
   justify-content: space-between;
+  z-index: 1;
 }
 
-.open .list-container {
-  max-height: 1000px;
+.text-list {
+  display: none;
+  width: 100%;
+  background-color: lightgray;
+  padding: 0 2% 0 2%;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.text-list.show {
+  display: block;
+  animation: slideDown 0.5s linear forwards;
+}
+
+.text-list.hide {
+  display: block;
+  animation: slideUp 0.5s linear forwards;
 }
 
 @keyframes slideDown {
@@ -25,21 +43,54 @@
     transform: translateY(-100%);
   }
   to {
-    transform: translateY(0);
+    transform: translateY(0%);
   }
 }
 
-.show .text-list {
-  animation: slideDown 300ms ease-in-out;
-}
-
-.go-down {
-  /* rotate: 90deg; */
-  animation: turnDown 3s ease-in-out;
-}
-
-@keyframes turnDown {
+@keyframes slideUp {
+  from {
+    transform: translateY(0%);
+  }
   to {
-    transform: rotate 180deg;
+    transform: translateY(-100%);
+    display: none;
   }
+}
+
+@keyframes rotateArrowOpen {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateArrowClose {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Appliquez l'animation à la classe de la flèche ouverte */
+.fa-angle-up.open {
+  animation: rotateArrowOpen 0.3s linear forwards;
+}
+
+/* Appliquez l'animation à la classe de la flèche fermée */
+.fa-angle-up.close {
+  animation: rotateArrowClose 0.3s linear forwards;
+}
+
+/* Assurez-vous que la classe .fa-angle-up reste à l'envers lorsque fermée */
+.fa-angle-up {
+  transform: rotate(0deg);
+}
+
+/* Vous pouvez également ajouter des transitions pour une animation plus fluide */
+.fa-angle-up {
+  transition: transform 0.3s ease-in-out;
 }

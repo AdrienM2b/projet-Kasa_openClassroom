@@ -16,18 +16,16 @@ export default function List({ elements, titre }) {
       <div className='list-header'>
         <h3>{titre}</h3>
         <i
-          className={`fa-solid fa-angle-up ${isTextVisible ? 'go-down' : ''}`}
+          className={`fa-solid fa-angle-up ${isTextVisible ? 'open' : 'close'}`}
         ></i>
       </div>
-      {isTextVisible && (
-        <div className={`text-list ${isTextVisible ? 'show' : ''}`}>
-          {typeof elements === 'string' ? (
-            <p>{elements}</p>
-          ) : (
-            elements.map((element, index) => <p key={index}>{element}</p>)
-          )}
-        </div>
-      )}
+      <div className={`text-list ${isTextVisible ? 'show' : 'hide'}`}>
+        {typeof elements === 'string' ? (
+          <p>{elements}</p>
+        ) : (
+          elements.map((element, index) => <p key={index}>{element}</p>)
+        )}
+      </div>
     </div>
   );
 }
