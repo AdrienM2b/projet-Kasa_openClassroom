@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { dataHouses } from '../housesData';
 import '../styles/Houses.css';
 import List from './List';
+import Carousel from './Carousel';
 
 export default function Houses() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ export default function Houses() {
 
   return (
     <div className='houses-container'>
-      <div className='carousel'></div>
+      <Carousel images={houseData.pictures} />
       <div className='info-container'>
         <div className='text-container'>
           <h2>{houseData.title}</h2>

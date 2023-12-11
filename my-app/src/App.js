@@ -14,7 +14,6 @@ function App() {
     <div className='rootDocument'>
       <Router>
         <Header />
-        <Banner />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Apropos' element={<About />} />

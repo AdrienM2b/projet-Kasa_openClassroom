@@ -17,15 +17,23 @@
   border-radius: 5px;
   justify-content: space-between;
   z-index: 1;
+  color: white;
+}
+.text-list.elements {
+  padding: 2%;
 }
 
 .text-list {
+  font-family: montserrat;
   display: none;
   width: 100%;
-  background-color: lightgray;
-  padding: 0 2% 0 2%;
+  background-color: #f6f6f6;
+  padding: 1% 2% 1% 2%;
   border-radius: 5px;
   z-index: 0;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .text-list.show {

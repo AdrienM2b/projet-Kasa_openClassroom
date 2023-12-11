@@ -1,0 +1,47 @@
+/* styles/Carousel.css */
+
+.carousel-container {
+  display: flex;
+  width: 100%;
+  height: 37vh;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+button {
+  background: none;
+  border: none;
+}
+.prevButton,
+.nextButton {
+  color: white;
+  background-color: transparent;
+  font-size: 100px;
+}
+
+.nbr-of-images {
+  position: absolute;
+  transform: translateY(16vh);
+  color: white;
+}

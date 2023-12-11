@@ -21,9 +21,13 @@ export default function List({ elements, titre }) {
       </div>
       <div className={`text-list ${isTextVisible ? 'show' : 'hide'}`}>
         {typeof elements === 'string' ? (
-          <p>{elements}</p>
+          <p className='elements'>{elements}</p>
         ) : (
-          elements.map((element, index) => <p key={index}>{element}</p>)
+          <div className='elements'>
+            {elements.map((element, index) => (
+              <p key={index}>{element}</p>
+            ))}
+          </div>
         )}
       </div>
     </div>
