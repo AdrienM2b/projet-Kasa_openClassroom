@@ -15,3 +15,14 @@
   font-weight: 700;
   color: white;
 }
+
+@media (max-width: 425px) {
+  .banner-text {
+    width: 61%;
+    font-size: 24px;
+  }
+
+  .banner {
+    height: 111px;
+  }
+}

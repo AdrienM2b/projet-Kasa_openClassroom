@@ -23,3 +23,22 @@
   text-decoration: underline;
   margin: 7%;
 }
+
+@media (min-width: 425px) {
+  .error-container {
+    min-height: 66vh;
+    justify-content: space-evenly;
+  }
+  .error-container h2 {
+    font-size: 96px;
+  }
+  .error-container p {
+    width: 61%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .error-container a {
+    font-size: 14px;
+  }
+}

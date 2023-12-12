@@ -6,8 +6,12 @@ import Header from './views/Header';
 import Footer from './views/Footer';
 import Error from './views/Error';
 import Houses from './views/Houses';
-import Banner from './views/Banner';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from 'react-router-dom';
 
 function App() {
   return (
@@ -18,7 +22,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Apropos' element={<About />} />
           <Route path='/Houses/:id' element={<Houses />} />
-          <Route path='*' element={<Error />} />
+          <Route path='/*' element={<Error />} />
+          {/* <Route path='/*' element={<Navigate to='/error' />} /> */}
         </Routes>
         <Footer />
       </Router>

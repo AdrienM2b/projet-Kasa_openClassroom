@@ -3,7 +3,6 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   margin-top: 2%;
 }
 
@@ -13,4 +12,14 @@
   flex-direction: column;
   align-items: center;
   min-height: 69vh;
+}
+
+@media (min-width: 425px) {
+  .about-container {
+    min-height: 25vh;
+    justify-content: space-evenly;
+  }
+  .main-container-about {
+    min-height: 37vh;
+  }
 }

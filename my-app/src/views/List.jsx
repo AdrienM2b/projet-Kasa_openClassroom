@@ -35,7 +35,7 @@ export default function List({ elements, titre }) {
         {typeof elements === 'string' ? (
           <p className='elements'>{elements}</p>
         ) : (
-          <div className='elements'>
+          <div className='list-of-elements'>
             {elements.map((element, index) => (
               <p key={index}>{element}</p>
             ))}

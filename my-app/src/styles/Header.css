@@ -12,3 +12,13 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
+@media (max-width: 425px) {
+  .header-logo img {
+    width: 70%;
+  }
+
+  .header-nav {
+    width: 50%;
+  }
+}

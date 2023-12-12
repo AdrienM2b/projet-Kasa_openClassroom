@@ -47,3 +47,29 @@ button {
   transform: translateY(16vh);
   color: white;
 }
+
+@media (max-width: 425px) {
+  .carousel-container {
+    height: 28vh;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .prevButton,
+  .nextButton {
+    font-size: 24px;
+  }
+
+  .carousel-controls {
+    width: 90%;
+    top: 23%;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nbr-of-images {
+    display: none;
+  }
+}

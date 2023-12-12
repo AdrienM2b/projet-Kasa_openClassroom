@@ -10,7 +10,6 @@
 .info-container {
   height: auto;
   display: flex;
-  flex: row;
   justify-content: space-between;
 }
 
@@ -96,7 +95,7 @@
   color: #e3e3e3;
 }
 
-/* description */
+/* description equipement */
 
 .description-equipment_container {
   width: 100%;
@@ -109,4 +108,46 @@
   width: 45%;
 }
 
-/* equipement */
+@media (max-width: 425px) {
+  .info-container {
+    flex-direction: column;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .rate-container {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rate .fa-star {
+    font-size: 20px;
+  }
+
+  .profil-container p {
+    font-size: 12px;
+  }
+
+  .profil-container img {
+    width: 25%;
+  }
+
+  .description-equipment_container {
+    flex-direction: column;
+    min-height: 15vh;
+    justify-content: space-evenly;
+  }
+
+  .description-equipment {
+    width: 100%;
+  }
+
+  .tags-container {
+    font-size: 10px;
+    align-items: center;
+  }
+}

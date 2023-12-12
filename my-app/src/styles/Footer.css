@@ -17,3 +17,17 @@
   color: white;
   margin-top: 2%;
 }
+
+@media (max-width: 425px) {
+  .footer {
+    height: 23vh;
+  }
+
+  .footer-image {
+    width: 29%;
+  }
+
+  .footer-text {
+    width: 35%;
+  }
+}
