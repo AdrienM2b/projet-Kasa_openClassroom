@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { dataHouses } from '../housesData';
 import '../styles/Houses.css';
 import List from './List';
@@ -7,7 +7,23 @@ import Carousel from './Carousel';
 
 export default function Houses() {
   const { id } = useParams();
-  const houseData = dataHouses.find((house) => house.id === id);
+  const navigate = useNavigate();
+
+  const [houseData, setHouseData] = useState(null);
+
+  useEffect(() => {
+    const foundHouseData = dataHouses.find((house) => house.id === id);
+    if (!foundHouseData) {
+      // Rediriger vers la page d'erreur si l'ID n'est pas trouvé
+      navigate('/error');
+    } else {
+      setHouseData(foundHouseData);
+    }
+  }, [id, navigate]);
+
+  if (!houseData) {
+    return null; // Ou affichez un message de chargement
+  }
 
   return (
     <div className='houses-container'>
