@@ -22,7 +22,7 @@ export default function Houses() {
   }, [id, navigate]);
 
   if (!houseData) {
-    return null; // Ou affichez un message de chargement
+    return null;
   }
 
   return (
