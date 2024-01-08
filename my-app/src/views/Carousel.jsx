@@ -35,7 +35,7 @@ const Carousel = ({ images }) => {
           ''
         ) : (
           <p className='nbr-of-images'>
-            {currentIndex}/{images.length}
+            {currentIndex + 1}/{images.length}
           </p>
         )}
       </div>

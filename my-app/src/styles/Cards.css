@@ -5,18 +5,20 @@
   background-color: #f6f6f6;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 5vw;
   justify-content: center;
   margin-top: 3%;
   padding: 3% 0 5% 0;
 }
 
 .cards {
-  width: 24vw;
-  height: 30vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: start;
   align-items: end;
+  filter: drop-shadow(0.2);
+  border-radius: 5px;
 }
 
 .cards p {
@@ -25,8 +27,19 @@
   font-weight: 500;
 }
 
-a {
+.gradient-filter {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000000 -10%, transparent 40%);
+  border-radius: 5px;
+}
+
+.card-gallery a {
   text-decoration: none;
+  width: 22vw;
+  height: 40vh;
 }
 
 @media (max-width: 425px) {
@@ -34,6 +47,11 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: transparent;
+  }
+
+  .card-gallery a {
+    width: auto;
+    height: 33vh;
   }
 
   .cards {

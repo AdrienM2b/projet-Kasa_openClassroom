@@ -43,7 +43,7 @@
 }
 
 .text-list.hide {
-  display: block;
+  display: none;
   animation: slideUp 0.5s linear forwards;
 }
 
@@ -62,7 +62,6 @@
   }
   to {
     transform: translateY(-100%);
-    display: none;
   }
 }
 

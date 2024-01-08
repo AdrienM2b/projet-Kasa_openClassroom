@@ -10,7 +10,9 @@ export default function cards({ picture, title }) {
         backgroundSize: 'cover',
       }}
     >
-      <p>{title}</p>
+      <span className='gradient-filter'>
+        <p>{title}</p>
+      </span>
     </div>
   );
 }
